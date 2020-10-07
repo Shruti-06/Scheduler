@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/calendar"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amatic_sc_bold"
+        android:layout_gravity="center"
+        android:textSize="23dp"
+        android:text="Sign Up With SetMore"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone no."
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4cbbb9"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            android:text="Sign Up" />
+
+        <Button
+            android:id="@+id/login_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have account? log in"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:textColor="#086972"
+            android:elevation="0dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
